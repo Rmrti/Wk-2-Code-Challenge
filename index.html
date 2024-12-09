@@ -1,24 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!--head section-->
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Shopping List</title>
-  <link rel="stylesheet" href="styles.css">
+  <!--title of the webpage-->
+  <title> Shopping list Checklist </title>
+  <!-- Link to the external stylesheet  -->
+  <link rel="stylesheet" href="./style.css">
 </head>
+
+<!--body section-->
 <body>
+  <!-- Div to contain the main content of the page -->
   <div class="wrapper">
+    <!-- Heading for the shopping list -->
     <h1>Shopping List</h1>
+    
+    <!-- Section for inputing item details -->
     <div class="input-section">
+      <!-- Input field for the name of the item -->
       <input type="text" id="item-name" placeholder="Item name" class="input">
+      
+      <!-- input field for the price of the item -->
       <input type="number" id="item-price" placeholder="Item price (Ksh)" class="input">
+      
+      <!-- button to add items to the shopping list -->
       <button id="add-item" class="btn">Add Item</button>
     </div>
+    
+    <!-- the section where the item list will show -->
     <div id="list-section">
+      <!-- Unordered list to display the items in the shopping list -->
       <ul id="shopping-list"></ul>
     </div>
+    
+    <!-- Button to clear all items from the shopping list -->
     <button id="clear-list" class="btn clear-btn">Clear All</button>
   </div>
-  <script src="script.js"></script>
+
+  <!-- Link to the external JavaScript file -->
+  <script src="./index.js"></script>
 </body>
 </html>

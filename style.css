@@ -1,4 +1,5 @@
-/* Base Styling */
+/* Styling for the website */
+/* styling for the body element */
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
     margin: 0;
@@ -12,6 +13,7 @@ body {
     height: 100vh;
   }
   
+  /* main container for the content */
   .wrapper {
     width: 90%;
     max-width: 500px;
@@ -22,12 +24,14 @@ body {
     background-color: #ffffff;
   }
   
+  /* styling for the heading */
   h1 {
     font-size: 1.8em;
     margin-bottom: 20px;
     color: #000000;
   }
   
+  /* input section styling */
   .input-section {
     display: flex;
     flex-direction: column;
@@ -35,6 +39,7 @@ body {
     margin-bottom: 20px;
   }
   
+  /* input field styling */
   .input {
     padding: 10px;
     font-size: 1em;
@@ -42,6 +47,7 @@ body {
     border-radius: 5px;
   }
   
+  /* general button styling */
   .btn {
     padding: 10px;
     font-size: 1em;
@@ -53,28 +59,34 @@ body {
     transition: background-color 0.3s;
   }
   
+  /* hover effect for buttons */
   .btn:hover {
-    background-color: #00a651; /* Green */
+    background-color: #00a651; 
   }
   
+  /* styling specifically for the "clear all button */
   .clear-btn {
-    background-color: #ff4d4d; /* Red for clear list */
+    background-color: #ff4d4d; 
   }
   
+  /* hover effect for "the clear all" button */
   .clear-btn:hover {
     background-color: #e60000;
   }
   
+  /* styling for the shopping list section */
   #list-section {
     margin-top: 20px;
     text-align: left;
   }
   
+  /* styling for the unordered list */
   #shopping-list {
     list-style: none;
     padding: 0;
   }
   
+  /*styling for individual list items */
   .list-item {
     display: flex;
     justify-content: space-between;
@@ -86,6 +98,7 @@ body {
     background-color: #f9f9f9;
   }
   
+  /* styling for purchased items */
   .purchased {
     text-decoration: line-through;
     background-color: #d3ffd3;
