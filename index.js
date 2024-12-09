@@ -9,6 +9,15 @@ const listOutput = document.querySelector('#shopping-list');
 
 let listItems = [];
 
+// Load list from localStorage on page load
+document.addEventListener('DOMContentLoaded', function() {
+  const storedList = localStorage.getItem('shoppingList');
+  if (storedList) {
+    listItems = JSON.parse(storedList);
+    updateList();
+  }
+});
+
 // Function to refresh the list view
 function updateList() {
   listOutput.innerHTML = '';
@@ -39,6 +48,9 @@ function updateList() {
       togglePurchased(itemIndex);
     });
   });
+
+  // Save the updated list to localStorage
+  localStorage.setItem('shoppingList', JSON.stringify(listItems));
 }
 
 // Function to add a new item
